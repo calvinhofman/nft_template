@@ -1,47 +1,36 @@
+
+// Web3 stuff
 import { ConnectWallet } from "@thirdweb-dev/react";
+
+
+// images
+import headerlogo from './images/HeaderLogo.png'
+
+
+// styling
 import "./styles/Home.css";
 
 export default function Home() {
   return (
-    <div className="container">
-      <main className="main">
-        <h1 className="title">
-          Welcome to <a href="https://thirdweb.com/">thirdweb</a>!
-        </h1>
-
-        <p className="description">
-          Get started by configuring your desired network in{" "}
-          <code className="code">src/index.js</code>, then modify the{" "}
-          <code className="code">src/App.js</code> file!
-        </p>
-
-        <div className="connect">
-          <ConnectWallet dropdownPosition={{ side: 'bottom', align: 'center'}} />
+    <div className=" container mx-auto">
+        <div className="connect top-10 flex justify-end  relative">
+          <ConnectWallet />
         </div>
+      <main className="">
+        <div className="w-3/12 mx-auto">
+        <img src={headerlogo} alt="header image" />
+        </div>
+        <div className="mt-56">
+          <h1 className="text-5xl font-extrabold">New NFT collection <br /> coming soon!</h1>
 
-        <div className="grid">
-          <a href="https://portal.thirdweb.com/" className="card">
-            <h2>Portal &rarr;</h2>
-            <p>
-              Guides, references and resources that will help you build with
-              thirdweb.
-            </p>
-          </a>
+          <p className="text-2xl font-bold mt-20"><span>0 / 500 MINTED</span></p>
 
-          <a href="https://thirdweb.com/dashboard" className="card">
-            <h2>Dashboard &rarr;</h2>
-            <p>
-              Deploy, configure and manage your smart contracts from the
-              dashboard.
-            </p>
-          </a>
+          <div className="mt-20">
+            <button className=" border-black-100 border-2 p-4">Mint now!</button>
+          </div>
+          <div className="mt-20">
 
-          <a href="https://portal.thirdweb.com/templates" className="card">
-            <h2>Templates &rarr;</h2>
-            <p>
-              Discover and clone template projects showcasing thirdweb features.
-            </p>
-          </a>
+          </div>
         </div>
       </main>
     </div>
