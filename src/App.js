@@ -11,30 +11,38 @@ import "./styles/Home.css";
 
 export default function Home() {
   return (
-    <div className=" container px-64 mx-auto">
+    <div className=" container  lg:px-64 mx-auto">
       <div className="connect top-10 flex justify-end  relative">
-        <ConnectWallet />
+        <ConnectWallet  />
       </div>
       <main className="">
-        <div className="absolute mt-40 left-0">
-          <img className="w-[50rem] pr-0" src={rightCow} alt="" />
+        <div className="absolute mt-40 lg:mt-64 left-0">
+          <img className="w-[5rem] md:w-[10rem] lg:w-[15rem] xl:w-[20rem] pr-0" src={rightCow} alt="" />
         </div>
-        <div className="absolute mt-40 right-0">
-          <img className="w-[50rem] " src={leftCow} alt="" />
+        <div className="absolute mt-40 lg:mt-64 right-0">
+          <img className="w-[5rem] md:w-[10rem] lg:w-[15rem] xl:w-[20rem]" src={leftCow} alt="" />
         </div>
-        <div className="w-3/12 mx-auto">
+        <div className="lg:w-3/12 w-8/12  mx-auto mt-20 lg:mt-0">
           <img src={headerlogo} alt="header image" />
         </div>
-        <div className="mt-56">
-          <h1 className="text-3xl font-extrabold">
+        <div className="lg:mt-56 xl:mt-8 mt-12"> 
+          {/* <h1 className="lg:text-3xl text-xl font-extrabold ">
             New NFT collection <br /> coming soon!
           </h1>
 
-          <p className="text-xl font-bold mt-20">
+          <p className="text-lg font-bold mt-20">
             <span>0 / 500 MINTED</span>
-          </p>
+          </p> */}
 
-          <div className="mt-20">
+          <div className=" md:w-5/12 xl:w-4/12 h-[20rem] md:h-[25rem] xl:h-[35rem] rounded-2xl border-2 mx-auto">
+            <img src={rightCow} alt="" />
+          </div>
+
+          <div className="text-center mt-4">
+            <p>rarity: <span></span></p>
+          </div>
+
+          <div className="mt-20 text-center">
             <button className=" border-black-100 border-2 p-4">
               Mint now!
             </button>
