@@ -1,6 +1,7 @@
 
 // Web3 stuff
-import { ConnectWallet } from "@thirdweb-dev/react";
+import { useAddress, useMintNFT, ConnectWallet } from "@thirdweb-dev/react";
+
 
 
 // images
@@ -24,6 +25,7 @@ export default function Home() {
           <h1 className="text-5xl font-extrabold">New NFT collection <br /> coming soon!</h1>
 
           <p className="text-2xl font-bold mt-20"><span>0 / 500 MINTED</span></p>
+          <p className="text-2xl font-bold mt-20"><span>{useAddress()}</span></p>
 
           <div className="mt-20">
             <button className=" border-black-100 border-2 p-4">Mint now!</button>
