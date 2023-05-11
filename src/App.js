@@ -1,38 +1,54 @@
-
 // Web3 stuff
 import { useAddress, useMintNFT, ConnectWallet } from "@thirdweb-dev/react";
 
 
-
 // images
-import headerlogo from './images/HeaderLogo.png'
-
+import headerlogo from "./images/HeaderLogo.png";
+import leftCow from "./images/cow1.png";
+import rightCow from "./images/cow.png";
 
 // styling
 import "./styles/Home.css";
 
 export default function Home() {
   return (
-    <div className=" container mx-auto">
-        <div className="connect top-10 flex justify-end  relative">
-          <ConnectWallet />
-        </div>
+    <div className=" container  lg:px-64 mx-auto">
+      <div className="connect top-10 flex justify-end  relative">
+        <ConnectWallet  />
+      </div>
       <main className="">
-        <div className="w-3/12 mx-auto">
-        <img src={headerlogo} alt="header image" />
+        <div className="absolute mt-40 lg:mt-64 left-0">
+          <img className="w-[5rem] md:w-[10rem] lg:w-[15rem] xl:w-[20rem] pr-0" src={rightCow} alt="" />
         </div>
-        <div className="mt-56">
-          <h1 className="text-5xl font-extrabold">New NFT collection <br /> coming soon!</h1>
+        <div className="absolute mt-40 lg:mt-64 right-0">
+          <img className="w-[5rem] md:w-[10rem] lg:w-[15rem] xl:w-[20rem]" src={leftCow} alt="" />
+        </div>
+        <div className="lg:w-3/12 w-8/12  mx-auto mt-20 lg:mt-0">
+          <img src={headerlogo} alt="header image" />
+        </div>
+        <div className="lg:mt-56 xl:mt-8 mt-12"> 
+          {/* <h1 className="lg:text-3xl text-xl font-extrabold ">
+            New NFT collection <br /> coming soon!
+          </h1>
 
-          <p className="text-2xl font-bold mt-20"><span>0 / 500 MINTED</span></p>
-          <p className="text-2xl font-bold mt-20"><span>{useAddress()}</span></p>
+          <p className="text-lg font-bold mt-20">
+            <span>0 / 500 MINTED</span>
+          </p> */}
 
-          <div className="mt-20">
-            <button className=" border-black-100 border-2 p-4">Mint now!</button>
+          <div className=" md:w-5/12 xl:w-4/12 h-[20rem] md:h-[25rem] xl:h-[35rem] rounded-2xl border-2 mx-auto">
+            <img src={rightCow} alt="" />
           </div>
-          <div className="mt-20">
 
+          <div className="text-center mt-4">
+            <p>rarity: <span></span></p>
           </div>
+
+          <div className="mt-20 text-center">
+            <button className=" border-black-100 border-2 p-4">
+              Mint now!
+            </button>
+          </div>
+          <div className="mt-20"></div>
         </div>
       </main>
     </div>
