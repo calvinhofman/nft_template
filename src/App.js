@@ -21,9 +21,9 @@ export default function Home() {
   // const address = useAddress();
   // const { mutate: ClaimNFT, isLoading, error } = useClaimNFT(contract);
   return (
-    <div className=" container px-64 mx-auto">
+    <div className=" container  lg:px-64 mx-auto">
       <div className="connect top-10 flex justify-end  relative">
-        <ConnectWallet />
+        <ConnectWallet  />
       </div>
       <main className="">
         {/* <div className="absolute mt-40 left-0">
@@ -40,7 +40,7 @@ export default function Home() {
             New NFT collection <br /> coming soon!
           </h1>
 
-          <p className="text-xl font-bold mt-20">
+          <p className="text-lg font-bold mt-20">
             <span>0 / 500 MINTED</span>
           </p>
 
