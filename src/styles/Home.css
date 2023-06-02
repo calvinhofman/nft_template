@@ -63,15 +63,15 @@
 }
 
 .card {
-  background-color: #FF742E!important;
+  background-color: #fd5a08!important;
   color: white!important;
   width: 375px!important;
   height: 100px!important;
   font-weight: 700!important;
   font-size: 1.5em!important;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 0px;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .card:hover,
@@ -116,7 +116,7 @@
 
 @media screen and (max-width: 1025px) {
   .card {
-    background-color: #FF742E!important;
+    background-color: #fd5a08!important;
     color: white!important;
     width: 275px!important;
     height: 100px!important;
@@ -130,13 +130,13 @@
 
 @media screen and (max-width: 426px) {
   .card {
-    background-color: #FF742E!important;
+    background-color: #fd5a08!important;
     color: white!important;
     width: 275px!important;
     height: 100px!important;
     font-weight: 700!important;
     font-size: 1.2em!important;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
     border-radius: 10px;
 
@@ -145,14 +145,22 @@
 
 @media screen and (max-width: 321px) {
   .card {
-    background-color: #FF742E!important;
+    background-color: #fd5a08!important;
     color: white!important;
     width: 175px!important;
     height: 100px!important;
     font-weight: 700!important;
     font-size: 1.2em!important;
-    margin-top: 30px;
+    margin-top: 10px;
     border-radius: 10px;
     margin-bottom: 30px;
   }
+}
+
+.tw-connect-wallet{
+  background: #69C1F6!important;
+}
+.tw-connected-wallet{
+  background: #69C1F6!important;
+
 }

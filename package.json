@@ -9,11 +9,16 @@
     "@testing-library/user-event": "^14.4.3",
     "@thirdweb-dev/react": "^3.9.0",
     "@thirdweb-dev/sdk": "^3.9.0",
+    "@walletconnect/ethereum-provider": "^2.7.7",
+    "@walletconnect/web3-provider": "^1.8.0",
+    "@web3modal/standalone": "^2.4.2",
     "ethers": "^5.7.2",
     "react": "^18.2",
     "react-dom": "^18.2",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^3.1.0"
+    "walletconnect": "^1.7.8",
+    "web-vitals": "^3.1.0",
+    "web3": "^1.10.0"
   },
   "devDependencies": {
     "assert": "^2.0.0",
